@@ -57,7 +57,7 @@ Then you should be able to login in http://192.168.0.10/admin with below credits
 - password: password12345
 
 ## Demo
-Demo application can be found in https://51.254.122.145:8080/admin
+Demo application can be found in http://51.254.122.145:8080/admin
 
 - user: admin
 - password: password12345
