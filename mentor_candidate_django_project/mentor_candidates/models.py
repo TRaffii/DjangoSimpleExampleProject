@@ -10,3 +10,8 @@ class Mentor(models.Model):
     email = models.CharField(max_length=200)
     description = models.TextField()
 
+
+class Opinion(models.Model):
+    mentor = models.ForeignKey(Mentor)
+    name = models.CharField(max_length=300)
+    description = models.TextField()
