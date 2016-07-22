@@ -21,3 +21,43 @@ $ python manage.py runserver 8080
 ```
 
 Navigate to http://localhost:8080/admin and login with credits provided before
+
+## Docker:
+
+### Project is configured to run in docker enviroment 
+
+Please ensure that you have docker installed on your system (https://docs.docker.com/engine/installation/)
+
+To run example in docker enviroment follow this steps:
+- Download repository
+```sh
+git clone https://github.com/TRaffii/DjangoSimpleExampleProject.git
+```
+- Go to project directory 
+```sh
+cd DjangoSimpleExampleProject
+```
+- Change chmod of docker-entrypoint.sh file 
+```sh
+chmod u+x docker-entrypoint.sh
+```
+- Build docker image
+```sh
+sudo docker build -t <youruser>/mentor_candidate:latest . 
+```
+Where <youruser> is you unique username
+- Run image 
+```sh
+sudo docker run --publish=<yourip>:8080:8080 <youruser>/mentor_candidate   
+```
+Where yourip is our computer ip for example 192.168.0.10
+
+Then you should be able to login in http://192.168.0.10/admin with below credits:
+- user: admin
+- password: password12345
+
+## Demo
+Demo application can be found in https://51.254.122.145:8080/admin
+
+- user: admin
+- password: password12345
