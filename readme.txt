@@ -1,1 +1,0 @@
-Test project for Codecool based on Django.
